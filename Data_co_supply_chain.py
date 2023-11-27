@@ -1,4 +1,4 @@
-# In this I have performed the steps for Data pre processing On DataCoSupplyChain
+# In this I have performed the steps for Data pre processing On 
 import pandas as pd
 
 # to import csv file
