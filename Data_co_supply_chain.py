@@ -1,5 +1,7 @@
+# In this I have performed the steps for Data pre processing On DataCoSupplyChain
 import pandas as pd
 
+# to import csv file
 task_data = pd.read_csv(r"D:/Data Science training/EDA/material/tasks/DataCoSupplyChainDataset.csv", encoding='ISO-8859-1')
 
 task_data.info() # to see number of rows and columns and types of data 
@@ -148,6 +150,7 @@ task_data["name"] = task_data["Customer Fname"]+ " "  +task_data["Customer Lname
 
 task_data.drop(["Customer Fname", "Customer Lname"], axis = 1, inplace = True)
 
+# Execute the below line to get csv file to perform data analysis and to get insights in PowerBI
 # task_data.to_csv("D:/Data Science training/EDA/material/tasks/Dataforpowerbi.csv", encoding='utf-8', index=False)
 
 task_data.columns
